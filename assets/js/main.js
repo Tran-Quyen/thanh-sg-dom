@@ -83,3 +83,49 @@
 
 //Select anchors (a tag) phải đặt name mới xài được
 // console.log(document.anchors);
+
+// -------------------------------------------
+// 5.Get Element methods - part 2
+// Cách 1
+// var listItemNodes = document.querySelectorAll('.box-1 li');
+// console.log(listItemNodes);
+
+// Cách 2
+// var boxNode = document.querySelector('.box-1');
+// Công việc 1: Sử dụng tới `boxNode`
+// ...
+// console.log(boxNode);
+// Công việc 2: Sử dụng tới các li elements
+// là con của `.box-1`
+// console.log(boxNode.querySelectorAll('li')); //lấy ra các list li là con của box-1
+// console.log(boxNode.getElementsByTagName('p')); //lấy ra p là con của box-1
+
+// -------------------------------------------
+// 6.Attributes Text & Text Node (Tự hiểu)
+// DOM Attribute
+// var headingElement = document.querySelector('.box h1');
+// headingElement.title = 'Title test';
+// headingElement.className = 'Heading';
+// headingElement.setAttribute('data-toggle', 'test data'); //attribute tùy biến
+// headingElement.setAttribute('href', 'link'); //setAttribute
+// console.log(headingElement.getAttribute('href')); //getAttribute
+// console.log(headingElement.getAttribute('data-toggle')); //getAttribute
+// console.log(headingElement.title); //get attribute hợp lệ (nghĩa là built-in của thẻ) k0 cần dùng get
+
+// -------------------------------------------
+// 7.innerText, textContent Property
+// getter, setter
+// var headingElement = document.querySelector('.box h1');
+// console.log(headingElement);
+// console.log(headingElement.innerText);
+// console.log(headingElement.textContent);
+// headingElement.innerText = 'New Heading';
+// headingElement.textContent = 'New Heading 2';
+
+// var headingElement = document.querySelector('.box h3');
+// console.log(headingElement);
+// // Sự khác nhau giữa innerText và textContent
+// console.log(headingElement.innerText); //bỏ qua tag chỉ lấy content giống với những gì bạn nhìn thấy
+// console.log(headingElement.textContent); //bỏ qua tag lấy content một cách thực sự và khoảng trắng các thẻ
+
+// ------------------------------------------- Sang file theory_2.js + index_2.html

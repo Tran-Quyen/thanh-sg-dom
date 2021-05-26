@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PreventDefault and StopPropagation</title>
+    <style lang="">
+      ul {
+        display: none;
+      }
+
+      input:focus ~ ul {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="https://www.codecademy.com/">Học lập trình</a>
+    <br />
+    <a href="http://google.com.vn">Tìm kiếm</a>
+    <br />
+    <input type="text" placeholder="Tìm kiếm" />
+    <ul>
+      <li>Javascript</li>
+      <li>PHP</li>
+      <li>Go lang</li>
+    </ul>
+    <div class="box" onclick="">
+      DIV
+
+      <button>Click me!</button>
+    </div>
+    <a href="./event_listener_final.html" target="_blank">Go To Final</a>
+  </body>
+  <script src="./assets/js/dom_event_example_2.js"></script>
+</html>
